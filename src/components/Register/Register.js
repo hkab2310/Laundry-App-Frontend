@@ -5,10 +5,9 @@ import Footer from '../Footer/Footer'
 import Footer2 from '../Footer2/Footer2'
 import Navbar from '../Navbar/Navbar'
 import './style.css'
-import Signin from '../signin/Sign_in'
 
 export default function Register(){
-    
+    let history = useNavigate();
     const [user,setUser] = useState({
         name:"",email:"",phone:"",state:"",district:"",address:"",pincode:"",password:""
     })
@@ -29,7 +28,7 @@ export default function Register(){
         }).then((res)=>{
             console.log(res)
             if(res.status === 200){
-                {<signin />}
+                history.push('/')
             }
         }).catch(error=>{
             window.alert("Invalid User Details or User Already Existed")
@@ -38,7 +37,7 @@ export default function Register(){
 
     return(
         <div>
-        <div className="header">
+             <div className="header">
           <Navbar />
         </div>
         {console.log("register is mounting")}
@@ -99,16 +98,17 @@ export default function Register(){
                             <a>I agree to Terms and Condition receiving marketing and promotional materials</a><br></br>
                         </div>
                         <div className='register_button'>
-                            <button type="submit">Register</button>
+                            <button>Register</button>
                         </div>
                         </div>
                     </form>
                 </div>
             </div>
+            <Footer />
+            <Footer2 />
             
         </div>
-        <Footer />
-        <Footer2 />
+
         </div>
     )
 }

@@ -1,0 +1,61 @@
+.table {
+    height: 730px;
+}
+
+.header {
+    position: absolute;
+    left: 40px;
+    top: 0;
+    /* border: 1px solid; */
+    width: 1405px;
+}
+
+.footer {
+    position: absolute;
+    top: 881px;
+    /* border: 1px solid; */
+    width: 1405px;
+}
+
+.createOrder {
+    position: absolute;
+    top: 81px;
+    left: 45px;
+    /* border: 1px solid yellow; */
+    height: 831px;
+    width: 1360px;
+    background-color: #0000000f;
+}
+
+.orderpage-heading {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    height: calc(24.8px + 45px);
+    /* border: 1px solid; */
+}
+
+.order-count {
+    font-size: 18px;
+    font: normal;
+    font-weight: 600;
+    letter-spacing: 0px;
+    color: #1e2022;
+    text-transform: capitalize;
+    opacity: 1;
+    /* width: 179px; */
+    /* border: 1px solid; */
+    text-align: left;
+}
+
+.order-count label {
+    position: absolute;
+    left: 49px;
+    top: 25px;
+}
+
+.search {
+    position: absolute;
+    right: 48px;
+    top: 25px;
+}

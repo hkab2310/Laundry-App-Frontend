@@ -1,2 +1,1 @@
-# Laundry-App-Frontend
-backend repo for laundry app
+# Laundry_App

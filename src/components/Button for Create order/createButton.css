@@ -1,0 +1,11 @@
+button.create-btn{
+    height: 32px;
+    width: 107px;
+    border-radius: 4px;
+    border-color: #5861AE;
+    padding: 0;
+}
+
+.create-btn:hover{
+    cursor: pointer;
+}

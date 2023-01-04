@@ -120,10 +120,11 @@ const Sign_in = () => {
                     </form>
                 </div>
             </div>
+            <Footer />
+            <Footer2 />
             
         </div>
-        <Footer />
-        <Footer2 />
+
     </div>
     )
 }
